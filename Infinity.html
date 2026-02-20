@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Infinity Guilda</title>
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle at center, #14001f, #000000);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+/* Container */
+.container {
+    margin-top: 40px;
+}
+
+/* Logo animada */
+.logo {
+    width: 260px;
+    animation: flutuar 3s ease-in-out infinite;
+    filter: drop-shadow(0 0 30px #a200ff);
+}
+
+@keyframes flutuar {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+}
+
+h1 {
+    font-size: 32px;
+    margin: 20px 0;
+    text-shadow: 0 0 25px #bb00ff;
+}
+
+/* Botões */
+.botao {
+    display: block;
+    width: 85%;
+    max-width: 340px;
+    margin: 15px auto;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 12px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    transform: scale(1.08);
+}
+
+.whatsapp { background: #25D366; }
+.instagram { background: #E1306C; }
+.tiktok { background: #000; border: 2px solid #a200ff; }
+
+.footer {
+    margin-top: 40px;
+    font-size: 14px;
+    opacity: 0.7;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- LOGO -->
+<img src="https://i.ibb.co/zh9Bqvb2/Infinity.png" class="logo">
+
+<h1>🔥 Recrutamento Infinity 🔥</h1>
+
+<!-- WHATSAPP -->
+<a href="https://chat.whatsapp.com/Ksuz95iwNsS7mjVx3aD7NB?mode=gi_t"
+class="botao whatsapp" target="_blank">
+WhatsApp
+</a>
+
+<!-- INSTAGRAM (abre no app + fallback) -->
+<a href="instagram://user?username=lnfinity_ofcc"
+onclick="setTimeout(function(){ window.location.href='https://instagram.com/lnfinity_ofcc'; }, 600);"
+class="botao instagram">
+Instagram
+</a>
+
+<!-- TIKTOK (abre no app + fallback) -->
+<a href="tiktok://user/@lnfinity_ofcc"
+onclick="setTimeout(function(){ window.location.href='https://tiktok.com/@lnfinity_ofcc'; }, 600);"
+class="botao tiktok">
+TikTok
+</a>
+
+<div class="footer">
+© 2026 Infinity Guilda
+</div>
+
+</div>
+
+</body>
+</html>
